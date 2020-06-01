@@ -1,4 +1,4 @@
-# Pet Paws
+# FAQ
 Coming Soon...
 
-![Homepage](https://raw.githubusercontent.com/AbnerLago/PetPaws/master/Homepage.png)
+<img src="./assets/FAQ.png">
