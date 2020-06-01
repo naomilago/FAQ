@@ -1,0 +1,79 @@
+@media screen and (max-width: 980px) {
+  .button {
+    width: 11vw;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .button {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 775px) {
+  .button {
+    width: 13vw;
+  }
+}
+@media screen and (max-width: 692px) {
+  :root {
+    --text-size: 50%;
+  }
+  .image, .image.-small {
+    width: 100%;
+    display: block;
+    order: -1;
+  }
+  .entry > .content {
+    flex-direction: column;
+  }
+  .whoAreWe > .container > .card {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .whoAreWe > .container > .card > .message {
+    margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 545px) {
+  .button {
+    width: 20vw;
+  }
+  .entry .content .title p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header {
+    height: 9vh;
+  }
+  .header > .navigator > .navOptions {
+    display: none;
+  }
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .one,
+  .two,
+  .three {
+    background: #D200B5;
+    height: 2px;
+    width: 75%;
+    margin: 6px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .entry > .content {
+    width: 100vw;
+  }
+  .button {
+    width: 25vw;
+  }
+  .whoAreWe > .container > .card {
+    width: 100vw;
+    padding: 4vw;
+  }
+}

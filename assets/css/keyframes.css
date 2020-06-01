@@ -1,0 +1,13 @@
+@keyframes appear {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.79;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

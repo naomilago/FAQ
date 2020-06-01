@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --text-size: 62.5%;
+  --subTitle-size: 1.1rem;
+}
+
+/*
+  GLOBAL
+*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--text-size);
+    font-family: "Roboto", sans-serif;
+    color: #383f4d;
+    background: #eeeeee;
+    background: linear-gradient( 90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(238, 238, 238, 1) 100%);
+}
+
+button {
+  border: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.homeTitle {
+  font-size: 3rem;
+  color: #4C4981;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: var(--subTitle-size);
+}
+
+.homeParagraph {
+  width: 430px;
+}
+
+.themed-text {
+  color: #D200B5;
+}
+
+.button {
+  user-select: none;
+  font-size: var(--text-size);
+  background-color: #D200B5; 
+  color: #efefef;
+  padding: 10px;
+  border-radius: 25px;
+  width: 10vw;
+  height: 6vh;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: all .3s ease;
+}
+.button.-light {
+  background-color: #D200B5;
+}
+
+.button:hover {
+  background-color: rgb(238, 59, 214);
+  box-shadow: -1px 6px 10px 0 rgba(9, 8, 10, 0.2);
+  transform: scale(1.15, 1.15);
+}
+
+.image {
+  pointer-events: none;
+  user-select: none;
+}
+
+.image.-medium {
+  width: 95%;
+  height: 95%;
+}
+
+.image.-small {
+  width: 50%;
+  height: 50%;
+}
+
+
+/*
+   HEADER
+*/
+
+.header {
+  user-select: none;
+  animation: 1s ease-out appear;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  padding-bottom: 0.5vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .logo {
+  margin-left: 4%;
+  height: 6vh;
+  cursor: pointer;
+}
+
+
+.navOptions {
+  margin-right: 3%;
+  border-spacing: 20px;
+}
+
+.navOptions tr td:not(:last-child) {
+  font-size: var(--text-size);
+  color: #a5a5a5;
+  position: relative;
+}
+
+.navOptions tr td:hover {
+  cursor: pointer;
+}
+
+.navOptions tr td:not(:last-child):after {
+  content: "";
+  transform: scaleX(0);
+  width: 0%;
+  height: 0px;
+  transform-origin: center;
+  transition: all .3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navOptions tr td:not(:last-child):hover:after {
+  background-color: #a5a5a5;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(1);
+}
+
+
+/*
+  MAIN
+*/
+
+/*
+  ADOPT
+*/
+
+.entry {
+  margin-top: 100px;
+  margin-left: 4%;
+  height: 100vh;
+}
+
+.entry .content {
+  display: flex;
+}
+
+.entry .content .title p {
+  font-size: 1.4rem;
+}
+
+.entry > .button {
+  margin-top: 3vh;
+}
+
+
+/*
+  Who are we
+*/
+
+.whoAreWe {
+  margin-top: 5vh;
+}
+.whoAreWe > .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.whoAreWe > .container > .card {
+  border-radius: 25px;
+  background-color: #EAD6FA;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(35vw, 2fr));
+  grid-template-rows: minmax(50vh, 3fr);
+  padding: 1vw;
+}
+
+.whoAreWe > .container > .card > .message > .title {
+  padding: 0 0 2vh 0;
+}
