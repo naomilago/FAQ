@@ -58,6 +58,7 @@ p {
 
 .homeParagraph {
   width: 430px;
+  line-height: 40px;
 }
 
 .themed-text {
@@ -84,6 +85,18 @@ p {
   background-color: #D200B5;
 }
 
+.saibaMais {
+  font-size: .9rem;
+}
+
+.bg-saibaMais {
+  background-color: #4C4981; 
+}
+
+.entrar {
+  font-size: 1.1rem;
+}
+
 .button:hover {
   background-color: rgb(238, 59, 214);
   box-shadow: -1px 6px 10px 0 rgba(9, 8, 10, 0.2);
@@ -91,18 +104,21 @@ p {
 }
 
 .image {
+  position: absolute;
   pointer-events: none;
   user-select: none;
+  right: 0;
+  bottom: 0;
 }
 
 .image.-medium {
-  width: 95%;
-  height: 95%;
+  width: 70%;
+  height: 70%;
 }
 
 .image.-small {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 
@@ -168,7 +184,7 @@ p {
 */
 
 /*
-  ADOPT
+  GET STARTED
 */
 
 .entry {
