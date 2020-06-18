@@ -64,6 +64,11 @@ p {
   line-height: 36px;
 }
 
+br {
+  pointer-events: none;
+  user-select: none;
+}
+
 .themed-text {
   color: #D200B5;
 }
