@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 :root {
   --text-size: 62.5%;
@@ -25,7 +26,7 @@ html {
 
 body {
     font-size: var(--text-size);
-    font-family: "Roboto", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     color: #383f4d;
     background: #eeeeee;
     background: linear-gradient( 90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(238, 238, 238, 1) 100%);
@@ -37,6 +38,8 @@ button {
 
 h1 {
   font-size: 1.8rem;
+  font-family: "Fredoka One", sans-serif;
+  letter-spacing: 5px;
 }
 
 .homeTitle {
@@ -58,7 +61,7 @@ p {
 
 .homeParagraph {
   width: 430px;
-  line-height: 40px;
+  line-height: 36px;
 }
 
 .themed-text {
@@ -90,7 +93,26 @@ p {
 }
 
 .bg-saibaMais {
-  background-color: #4C4981; 
+  background-color: #4C4981;
+  user-select: none;
+  font-size: var(--text-size);
+  color: #efefef;
+  padding: 10px;
+  border-radius: 25px;
+  width: 10vw;
+  height: 6vh;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: all .3s ease;
+}
+
+.bg-saibaMais:hover {
+  background-color: #726ebb;
+  box-shadow: -1px 6px 10px 0 rgba(9, 8, 10, 0.2);
+  transform: scale(1.15, 1.15);
 }
 
 .entrar {
@@ -103,22 +125,13 @@ p {
   transform: scale(1.15, 1.15);
 }
 
-.image {
+.homeImage {
   position: absolute;
   pointer-events: none;
   user-select: none;
-  right: 0;
-  bottom: 0;
-}
-
-.image.-medium {
-  width: 70%;
-  height: 70%;
-}
-
-.image.-small {
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  right: 3%;
+  bottom: 5%;
 }
 
 
