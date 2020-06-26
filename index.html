@@ -26,7 +26,7 @@
           <td><a>Home</a></td>
           <td><a>Sobre</a></td>
           <td><a>Contato</a></td>
-          <td class="button -light"><a class="entrar">Entrar</a></td>
+          <td class="button -light"><a class="entrar">Acessar</a></td>
         </tr>
       </table>
     </nav>
@@ -49,33 +49,64 @@
           <br />
           <br />
           <button class="bg-saibaMais">
-            <a class="saibaMais">SAIBA MAIS</a>
+            <a class="saibaMais">Acessar</a>
           </button>
         </div>
       </div>
-    </section>
-    <img class="homeImage" src="./assets/svg/homeImage.svg" alt="">
-    <!-- <section class="whoAreWe">
-      <div class="container">
-        <div class="card">
-          <img class="image -medium" src="" />
-          <div class="message">
-            <div class="title">
-              <h1>Lorem ipsum</h1>
-            </div>
-            <div class="description">
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-              </p>
-            </div>
+      <img class="homeImage" src="./assets/svg/homeImage.svg" alt="">
+      <img src="./assets/svg/scroll.svg" alt="scroll down" class="scroll-icon">
+    </section>    
+    <!-- MAIN QUESTIONS -->
+
+    <section class="container">
+      <h2 class="section-title">Principais Perguntas</h2>
+      <br>
+      <br>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Após ligar o computador, o autoteste exibe a mensagem “HDD Failure”</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Um HD com grande dano à superfície de seu disco, no motor ou na cabeça de leitura ou ainda com a placa de circuitos queimada, geralmente ocasiona essa mensagem de erro no auto-teste, logo que o computador é ligado.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">A porta USB funciona apenas em dispositivos específicos</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Algumas portas USB, como as encontradas em um PC, têm alimentação própria e podem alimentar dispositivos USB facilmente, mas portas sem fonte de energia própria, incluindo as de um teclado, fornecem menos energia.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Computador desligando ou reiniciando sozinho</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>A limpeza física do computador deve ser realizada com frequência. Acrescentar mais coolers e trocar a pasta térmica do processador - removendo o dissipador de calor, também são ótimos hábitos.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">O computador não reconhece o HD e apresenta mensagens de erro</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Testar um outro HD e verificar se os cabos estão em boas condições é o primeiro passo. É também viável que se utilize o CHKDSK visando reparar os setores defeituosos no HD. Entretanto, se o problema persistir, consulte um técnico especializado.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">O computador permanece mudo mesmo com o volume no máximo</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Uma das causas mais comuns que fazem com que os computadores não emitam sons são problemas de contato com os cabos. Portanto, verifique se os cabos se encontram em boa condição. Deixe uma música tocando e mexa no cabo afim de testá-lo.</p>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
+
+  <footer>
+    <div class="fixed-footer">
+      <h3 class="copyright">2020 &copy; Made with 💖 by
+        <a href="https://abnerlago.com"> Abner Lago</a>
+      </h3>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

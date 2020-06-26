@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
 :root {
   --text-size: 62.5%;
@@ -20,13 +22,18 @@
     display: none;
 }
 
+*::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
     font-size: var(--text-size);
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
     color: #383f4d;
     background: #eeeeee;
     background: linear-gradient( 90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(238, 238, 238, 1) 100%);
@@ -38,7 +45,8 @@ button {
 
 h1 {
   font-size: 1.8rem;
-  font-family: "Fredoka One", sans-serif;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 800;
   letter-spacing: 5px;
 }
 
@@ -88,13 +96,15 @@ br {
   cursor: pointer;
   transform: scale(1, 1);
   transition: all .3s ease;
+  font-family: "Maven Pro", sans-serif;
 }
 .button.-light {
   background-color: #D200B5;
 }
 
 .saibaMais {
-  font-size: .9rem;
+  font-size: 1rem;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .bg-saibaMais {
@@ -153,6 +163,7 @@ br {
   padding-bottom: 0.5vh;
   justify-content: space-between;
   align-items: center;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .header > .logo {
@@ -208,7 +219,7 @@ br {
 .entry {
   margin-top: 100px;
   margin-left: 4%;
-  height: 100vh;
+  height: 85vh;
 }
 
 .entry .content {
@@ -223,6 +234,21 @@ br {
   margin-top: 3vh;
 }
 
+.scroll-icon {
+  margin-top: 8vh;
+  margin-left: 45%;
+  width: 15px;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
 
 /*
   Who are we
@@ -250,4 +276,136 @@ br {
 
 .whoAreWe > .container > .card > .message > .title {
   padding: 0 0 2vh 0;
+}
+
+/* MAIN QUESTIONS */ 
+
+.section-title {
+  margin-left: 25%; 
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #e74dd3;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: "Maven Pro", sans-serif;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #e74dd3;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #e74dd3;
+  border: 1px solid #e74dd3;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #e74dd3;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  margin-bottom: 30px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 200ms linear, max-height 200ms linear;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 70px;
+  background: url("../svg/footer.svg") no-repeat center center;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer h3 {
+  position: absolute;
+  margin: auto;
+  left: 40%;
+  top: 70%;
+  font-size: .8rem;
+}
+
+footer h3 a {
+  color: #FFFFFF;
+}
+
+footer h3 a:hover {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: .3s ease;
 }
